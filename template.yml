@@ -37,3 +37,16 @@ Outputs:
   HelloWorldFunctionIamRole:
     Description: "Implicit IAM Role created for Hello World function"
     Value: !GetAtt HelloWorldFunctionRole.Arn
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: hello-world-app
+    Description: hello world
+    Author: tomas
+    SpdxLicenseId: Apache-2.0
+    # LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['tests']
+    HomePageUrl: https://github.com/tomaslm/hello-world-sam
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/tomaslm/hello-world-sam
